@@ -14,7 +14,6 @@ set number 		" set line number for pages
 
 " Unmap the arrow key (disable arrow key)
 
-no <down> <Nop>
 no <left> <Nop>
 no <right> <Nop>
 no <up> <Nop>
