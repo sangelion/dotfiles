@@ -6,15 +6,18 @@
 " 		1.1 - Adding function to disable the arrow key when vimming
 
 filetype plugin on
-syntax on		
+syntax on	
 
-set nocompatible    	" using vim setting insted of vi
-set nobackup 		" no backup, no files with tilde 
-set number 		" set line number for pages
+" Basic setting
+
+set nocompatible    		" using vim setting insted of vi
+set nobackup 				" no backup, no files with tilde 
+set number 					" set line number for pages
+set ruler					" show column and line
+set tabstop=4				" tab equal 4 space (default: 8)
 
 " Unmap the arrow key (disable arrow key)
 
-no <down> <Nop>
 no <left> <Nop>
 no <right> <Nop>
 no <up> <Nop>
@@ -30,5 +33,8 @@ vno <right> <Nop>
 vno <up> <Nop>
 vno <down> <Nop>
 
+"Others
+"set list					" show invisiblity of tab, space, eol
+"set listchars=tab:▸\ ,eol:¬
 
-
+colorscheme slate
