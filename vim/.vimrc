@@ -15,6 +15,7 @@ set nobackup 				" no backup, no files with tilde
 set number 					" set line number for pages
 set ruler					" show column and line
 set tabstop=4				" tab equal 4 space (default: 8)
+set shiftwidth=4			" Using indent ">"
 
 " Unmap the arrow key (disable arrow key)
 
