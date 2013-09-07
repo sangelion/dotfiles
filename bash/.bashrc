@@ -19,5 +19,8 @@ complete -cf man
 
 archey
 
-# xset b off
 # batterymon &
+
+if [ "$TERM" = "rxvt-256color" ]; then
+		xset b off
+fi
