@@ -1,10 +1,10 @@
 " ~/.vimrc
 " By: sangelion
-" Last Updated: 2013-08-16
+" Last Updated: 2014-09-08
 " Version: 
 " 		1.0 - Initial Configuration 2013-07-27
 " 		1.1 - Adding function to disable the arrow key when vimming
-"     1.2 - Adding whitespace trailing
+"     		1.2 - Adding whitespace trailing
 
 filetype plugin on
 syntax on	
@@ -12,11 +12,14 @@ syntax on
 " Basic setting
 
 set nocompatible    		" using vim setting insted of vi
-set nobackup 				    " no backup, no files with tilde 
-set number 					    " set line number for pages
-set ruler					      " show column and line
-set tabstop=4				    " tab equal 4 space (default: 8)
-set shiftwidth=4			  " Using indent ">"
+set nobackup 		    	" no backup, no files with tilde 
+set number 		    	" set line number for pages
+set ruler		      	" show column and line
+set tabstop=8		    	" tab equal 4 space (default: 8)
+set shiftwidth=8		" Using indent ">"
+set softtabstop=8
+set textwidth=80
+set noexpandtab
 
 " Unmap the arrow key (disable arrow key)
 
@@ -49,3 +52,5 @@ autocmd BufWinLeave * call clearmatches()
 "set listchars=tab:▸\ ,eol:¬ ,trail:.
 
 colorscheme slate
+
+" vim: ts=4 et sw=4
