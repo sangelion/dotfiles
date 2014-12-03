@@ -7,6 +7,8 @@
 "     		1.1.1 - Adding whitespace trailing
 "     1.2 - Adding indent to space (in comment)
 
+" use :set all to see all the available setting
+
 filetype plugin on
 syntax on	
 
