@@ -4,7 +4,8 @@
 " Version: 
 " 		1.0 - Initial Configuration 2013-07-27
 " 		1.1 - Adding function to disable the arrow key when vimming
-"     		1.2 - Adding whitespace trailing
+"     		1.1.1 - Adding whitespace trailing
+"     1.2 - Adding indent to space (in comment)
 
 filetype plugin on
 syntax on	
@@ -20,6 +21,19 @@ set shiftwidth=8		" Using indent ">"
 set softtabstop=8
 set textwidth=80
 set noexpandtab
+
+" To convert tab (indent) to space
+" size of hard tabstop
+" set tabstop=4
+
+" size of an indent
+" set shiftwidth=4
+
+" combination spaces and tabs
+" set softtabstop=4
+
+" always uses spaces instead of tab character
+" set expandtab
 
 " Unmap the arrow key (disable arrow key)
 
