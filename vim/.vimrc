@@ -1,25 +1,26 @@
 " ~/.vimrc
 " By: sangelion
-" Last Updated: 2014-09-08
+" Last Updated: 2015-01-01
 " Version: 
-" 		1.0 - Initial Configuration 2013-07-27
-" 		1.1 - Adding function to disable the arrow key when vimming
-"     		1.1.1 - Adding whitespace trailing
-"     1.2 - Adding indent to space (in comment)
+"     1.0   - Initial Configuration 2013-07-27
+"     1.1   - Adding function to disable the arrow key when vimming
+"     1.1.1 - Adding whitespace trailing
+"     1.2   - Adding indent to space (in comment)
+"     1.2.1 - Fix indent character to space
 
 " use :set all to see all the available setting
 
 filetype plugin on
-syntax on	
+syntax on
 
 " Basic setting
 
-set nocompatible    		" using vim setting insted of vi
-set nobackup 		    	" no backup, no files with tilde 
-set number 		    	" set line number for pages
-set ruler		      	" show column and line
-set tabstop=8		    	" tab equal 4 space (default: 8)
-set shiftwidth=8		" Using indent ">"
+set nocompatible        " using vim setting insted of vi
+set nobackup            " no backup, no files with tilde 
+set number              " set line number for pages
+set ruler               " show column and line
+set tabstop=8           " tab equal 4 space (default: 8)
+set shiftwidth=8        " Using indent '>'
 set softtabstop=8
 set textwidth=80
 set noexpandtab
@@ -39,7 +40,7 @@ set noexpandtab
 
 " Unmap the arrow key (disable arrow key)
 
-no <left> <Nop>
+no <left> <Nop> 
 no <right> <Nop>
 no <up> <Nop>
 no <down> <Nop>
@@ -64,7 +65,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 "Others
-"set list					" show invisiblity of tab, space, eol
+"set list               " show invisiblity of tab, space, eol
 "set listchars=tab:▸\ ,eol:¬ ,trail:.
 
 colorscheme slate
