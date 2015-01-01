@@ -20,11 +20,7 @@ set nobackup            " no backup, no files with tilde
 set number              " set line number for pages
 set ruler               " show column and line
 set tabstop=8           " tab equal 4 space (default: 8)
-<<<<<<< HEAD
 set shiftwidth=8        " Using indent '>'
-=======
-set shiftwidth=8        " Using indent ">"
->>>>>>> 619e934f3a14500829ad184c648e52f392078fe6
 set softtabstop=8
 set textwidth=80
 set noexpandtab
